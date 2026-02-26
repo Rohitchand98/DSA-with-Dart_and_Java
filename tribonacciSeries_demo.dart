@@ -1,4 +1,4 @@
-//Fibonacci series
+//Tribonacci series
 void main() {
   int fib(int n) {
     if (n > 0) {
