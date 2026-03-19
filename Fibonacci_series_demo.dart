@@ -10,12 +10,12 @@ void main() {
     }
     int firstNum = 0;
     int secondNum = 1;
-    for (int i = 0; i <= n; i++) {
+    for (int i = 2; i <= n; i++) {
       int thirdNum = firstNum + secondNum;
       firstNum = secondNum;
       secondNum = thirdNum;
     }
-    return firstNum;
+    return secondNum;
   }
   print(fib(4));
 }
