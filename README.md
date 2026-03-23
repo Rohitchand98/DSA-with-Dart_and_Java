@@ -10,3 +10,4 @@
 7. To find the product of two maximum numbers in array
 8. median_of_sorted_array
 9. Missing numbers in array
+10. Remove element from array 
