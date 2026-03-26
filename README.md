@@ -11,3 +11,5 @@
 8. median_of_sorted_array
 9. Missing numbers in array
 10. Remove element from array 
+11. Two Sum of largest element in a List or array
+12. 
