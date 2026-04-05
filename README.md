@@ -13,4 +13,6 @@
 10. Remove element from array 
 11. Two Sum of largest element in a List or array
 12. Arrays of Sorted Array 
-13. 
+13. To binary numbers
+14. Swap two number without using 3rd variable
+15. 

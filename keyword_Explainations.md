@@ -36,3 +36,5 @@
         -1 << 31 shifts the binary representation of -1 left by 31 bits.
         In Java, this evaluates to Integer.MIN_VALUE (≈ -2,147,483,648).
         In Dart, integers are unbounded, but the intent is the same: use a very small number to represent “negative infinity.”
+
+## 
