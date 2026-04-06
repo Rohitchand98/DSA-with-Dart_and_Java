@@ -1,20 +1,15 @@
-int missingNumberXOR(List<int> nums) {
-  int n = nums.length;
-  int xorAll = 0;
-  int xorNums = 0;
-
-  for (int i = 0; i <= n; i++) {
-    xorAll ^= i;
+int missingnumber(List<int> lst) {
+  int n = lst.length;
+  int totalsum = (n * (n + 1)) ~/ 2;
+  int currentsum = 0;
+  for (int i = 0; i < lst.length; i++) {
+    currentsum += lst[i];
   }
-
-  for (int num in nums) {
-    xorNums ^= num;
-  }
-
-  return xorAll ^ xorNums;
+  int ans = totalsum - currentsum;
+  return ans;
 }
 
 void main() {
-  List<int> nums = [9,6,4,2,3,5,7,0,1]; 
-  print(missingNumberXOR(nums)); // Output: 8
+  List<int> lst = [0, 1, 2, 4];
+  print(missingnumber(lst));
 }
