@@ -17,3 +17,11 @@
     Everywhere else, it prints a space to make the pyramid hollow.
     print('');
     Moves to the next line after finishing one row.
+
+#  How to make Square
+    Explanation:
+
+    for (int i = 0; i < n; i++) → runs n times for rows.
+    for (int j = 0; j < n; j++) → runs n times for columns in each row.
+    stdout.write("* ") → prints stars side by side without line breaks.
+    print("") → moves to the next line after each row.
