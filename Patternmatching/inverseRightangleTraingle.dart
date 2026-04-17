@@ -1,10 +1,11 @@
 import 'dart:io';
-void main(){
+
+void main() {
   int n = 5;
-  for (int i = 0; i < n; i++) {
-    for (int j = i; j < n; j++) {
-        stdout.write('* ');
-      }
-      print('');
+  for (int i = n; i >= 0; i--) {
+    for (int j = i; j > 0; j--) {
+      stdout.write(" * ");
     }
+    print("");
+  }
 }
