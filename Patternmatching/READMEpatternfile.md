@@ -1,6 +1,30 @@
 ## Pattern matching algorithm
+
+# Needed to Know before pattern matching coding:
+    1. print()- it print the items in column( help to move in next line).
+
+        for (int i = 0; i < n; i++) {
+        print(" * ");
+        }
+        This code will print * in Column    *
+                                            *
+                                            *
+                                            *
+                                            *
+                                            
+    2. stdout.write - it print the items in row. 
+
+        for (int i = 0; i < n; i++) {
+        stdout.write(" * ");
+        }. 
+        This code print * in Row ( *  *  *  *  * )
+
+    3. int n is the limit of the item to print and form a pattern
+
+    4. 
 # Step-by-Step Explanation of Hollow Triagle 
     int rows = 5;
+
     This sets the height of the pyramid. You’ll get 5 rows of stars.
     Outer loop (for (int i = 1; i <= rows; i++))
     Controls the number of rows.
@@ -107,7 +131,7 @@
     - The outer loop runs in reverse, so the pyramid shrinks.
     - Spaces increase as stars decrease, giving the inverted pyramid shape.
 
-##
+## 
 
 
 
