@@ -39,7 +39,7 @@
 // }
 
 
-//Programmer way code should work first fix later
+//Not the complete Solution but worked by Programmer logic
 double findMedianSortedArrays(List<int> nums1, List<int> nums2) {
   int m = nums1.length;
   int n = nums2.length;
