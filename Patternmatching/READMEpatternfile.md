@@ -131,6 +131,7 @@
     - The outer loop runs in reverse, so the pyramid shrinks.
     - Spaces increase as stars decrease, giving the inverted pyramid shape.
 
+
 ## 
 
 
