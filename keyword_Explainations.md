@@ -70,4 +70,5 @@ Input list
     print(ans);
     6−7−1.
     This result is wrong because the formula should use n+1 (since the array length is n, but the full range is 0..n).
-    
+
+##
