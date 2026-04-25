@@ -1,4 +1,4 @@
-public class BasicJavaIO {
+public class BasicIO {
     void main(){
         IO.println("Hello New Java");
         var java=IO.readln("Enter anything Here: ");
