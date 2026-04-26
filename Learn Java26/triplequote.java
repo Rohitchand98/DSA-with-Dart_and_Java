@@ -34,5 +34,38 @@ public class triplequote {
                         IO.println("id: "+parts[0]+"->  names:"+parts[1]);
                 }
         }
+
+        //Other Uses of Tripple quote
+                //Embedding Code Snippets
+        //You can store a whole block of code inside a text block for documentation or testing:
+
+        String snippet = """
+        public class Demo {
+        public static void main(String[] args) {
+                System.out.println("Hello World");
+        }
+        }
+        """;
+        System.out.println(snippet);
+
+        //Multi‑line Regex or Config
+        //Instead of writing long regex/config strings with escapes:
+        String regex = """
+        [a-zA-Z0-9]+@[a-z]+\\.(com|org|net)
+        """;
+        System.out.println(regex);
+
+        //Structured Data (CSV style)
+        String csv = """
+        id,name,marks
+        1,Rohit,85
+        2,Aman,90
+        3,Neha,78
+        """;
+
+        for (String line : csv.split("\\n")) {
+        System.out.println(line);
+        }
+
     }
 }
