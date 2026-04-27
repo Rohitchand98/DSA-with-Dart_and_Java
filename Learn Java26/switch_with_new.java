@@ -1,14 +1,12 @@
-
-import static java.lang.IO.println;
-
-
+//ignore swi
+@SuppressWarnings("all")
 
 public class switch_with_new {
     void main() {
         int day=2;
 
         //lets take example of OLD SWITCH
-        switch(day){
+        switch(day){//warning is to switch new version of "switch" code format not old one
             case 1: IO.println("Monday");
             break;
             default: IO.println("Invalid days");
@@ -18,7 +16,7 @@ public class switch_with_new {
         //now New Switch, -> Enhanced Switch (Java 12+) and No break needed
         switch (day) {
             case 1 -> IO.println("Fruit");
-            default->println("Not a fruit");
+            default-> IO.println("Not a fruit");
         }
         IO.println();
 
