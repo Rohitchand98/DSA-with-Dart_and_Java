@@ -32,8 +32,13 @@ public class switch_with_new {
         IO.println();
 
         //Multiple Labels (Java 14+) means multiple case
+        //Yield use for Multiple line of code in CASES eg.
         String whatday= switch(day){
             case 0, 1 -> "Monday";
+            case 2 -> {
+                IO.println(day+" can be any day in a week");
+                yield "A day in week";
+            }
             default ->"it didnot come under it";
         };
         IO.println(whatday);
@@ -48,8 +53,14 @@ public class switch_with_new {
         }
         IO.println();
 
-        // Yield in Switch Expressions 😮
-        
+        // Even Odd Switch Expressions 😮 comparing using switch
+        int number =5;
+        switch(number%2){
+            case 0-> IO.println("Even");
+            case 1-> {
+                IO.println("The number is Odd");
+            }default -> IO.println("Invalid Inputs");
+        }
     }
     
 }
