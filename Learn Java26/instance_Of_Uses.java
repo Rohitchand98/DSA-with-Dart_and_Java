@@ -3,8 +3,8 @@ public class instance_Of_Uses {
         //Use instanceof when dealing with unknown or mixed types. Works with objects only, not primitives.
         //old instance checker
         Object obj = "Hello";
-        if (obj instanceof String) {
-            String s = (String) obj;   // manual cast
+        if(obj instanceof String s) { // manual cast
+            // manual cast
             System.out.println(s.toUpperCase());
         }
 
