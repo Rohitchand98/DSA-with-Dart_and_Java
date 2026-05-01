@@ -15,7 +15,7 @@ public class forloopdemo {
             IO.print(listofname.get(i)+" ");
         }IO.println();
         
-        //Latest way to print a list or array was using forEach
+        //Latest way to print a list or array was using forEach(String+Lamda)
         IO.println("1. Using keyword 'ForEach'");
         listofname.forEach(i-> IO.print(i+" "));
 
