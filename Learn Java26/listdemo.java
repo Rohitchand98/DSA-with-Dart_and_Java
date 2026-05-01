@@ -7,14 +7,12 @@ public class listdemo {
     /* ##The Golden Era: Collections Framework (Java 1.2) introduced the List interface, which unified how we handle ordered collections.
     ## ArrayList: The go-to choice. It uses an internal array that grows dynamically. Fast for random access (get(i)).  
     ## LinkedList: A doubly-linked list. Better for frequent adding/removing at the ends, but slower for accessing elements by index.*/
-
     List<String> lstname= new ArrayList<>();
     lstname.add(0, "Fruits");
     IO.println(lstname.get(0));
 
     // The Modern Era: Immutability (Java 9)Java 9 introduced List.of(), 
-    // which creates a truly immutable (cannot be changed) list in one line. 
-
+    // which creates a truly immutable (cannot be changed) list in one line.
     List<String> lstname1= List.of("Banana", "Orange", "Lemon");
     //Use lstname1.add("Any"); will throw an exception error.
     for(String lst:lstname1){
@@ -33,6 +31,12 @@ public class listdemo {
     List<String> lstname2rev=lstname2.reversed();
     IO.print(lstname2rev);
     IO.println();
+
+    //try Points to keep pairs of data in list and how to print using for or foreach
+    record Point(int id, String name){}
+    List<Point> pairofdata=List.of(new Point(1,"Rohit"), new Point(2, "Hari"));
+    pairofdata.forEach(x->IO.print(x.id+" and "+x.name+" \n"));
+
 
     //OPERATIONS IN LIST
     List<String> list=new ArrayList<>(List.of("Rohit","Hari"));
