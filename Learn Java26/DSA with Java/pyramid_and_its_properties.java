@@ -43,7 +43,7 @@ public class pyramid_and_its_properties {
             for (int j = 0; j < n-i; j++) {
                 IO.print(" ");
             }
-            for (int k = 0; k <= i; k++) {
+            for (int k = 0; k < i; k++) {
                 IO.print("* ");
             }
             IO.println(" ");
@@ -53,11 +53,11 @@ public class pyramid_and_its_properties {
             for (int j = 0; j < n-i; j++) {
                 IO.print(" ");
             }
-            for (int k = 0; k <= i; k++) {
+            for (int k = 0; k < i; k++) {
                 IO.print("* ");
             }
             IO.println("");
         }IO.println("This is Diamond\n");
-        
+
     }
 }
