@@ -1,5 +1,5 @@
 
-public class right_angle_triangle {
+public class right_angle_triangle_properties {
     void main(){
         int n=5;
         //its right angle traingle
