@@ -51,5 +51,12 @@ public class right_angle_triangle_properties {
                 IO.print(j);
             }IO.println();
         }IO.println("series of number with two Right angle traingle\n");
+
+        //Binary numbers in right angle triangle
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i; j++) {
+               IO.print(j%2);
+            }IO.println();
+        }IO.println("Binary number in Right angle traingle\n");
     }   
     }
