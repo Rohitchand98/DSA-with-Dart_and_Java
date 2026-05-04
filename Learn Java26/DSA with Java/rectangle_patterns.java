@@ -18,7 +18,7 @@ public class rectangle_patterns {
             IO.println("");
         }IO.println("This is a Rectangle\n");
 
-        //This code will print a star of Hollow rectangle
+        //This code will print a stars of Hollow rectangle
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 if (i==0||j==0||i==n-1||j==n-1) {
@@ -30,5 +30,7 @@ public class rectangle_patterns {
             //here i have made a mistake which is i add another k forloop which increase extra weight and space
             //if a pattern is form using 2 loop try to follow using 2
         }IO.println("This is a Hollow Rectangle\n");
+
+        
     }
 }

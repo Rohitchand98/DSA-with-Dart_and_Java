@@ -38,9 +38,18 @@ public class right_angle_triangle_properties {
             for (int k = 0; k <= i; k++) {
                 IO.print(" * ");
             }IO.println();
-        }
-    
-    }
+        }IO.println("tilted or mirror Right angle traingle\n");
 
-        
+        //rightangle with parameter with series of numbers
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i; j++) {
+               IO.print(j);
+            }IO.println();
+        }
+        for (int i = 0; i < n; i++) {
+            for (int j = i; j < n; j++) {
+                IO.print(j);
+            }IO.println();
+        }IO.println("series of number with two Right angle traingle\n");
+    }   
     }
