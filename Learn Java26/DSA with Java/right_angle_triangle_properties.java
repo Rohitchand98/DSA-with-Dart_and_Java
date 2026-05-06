@@ -60,6 +60,7 @@ public class right_angle_triangle_properties {
         }IO.println("Binary number in Right angle traingle ");
 
         //Increasing of Numbers in right angle triangle
+        //also known as Floyed triangle
         int num=0;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < i; j++) {
@@ -68,5 +69,14 @@ public class right_angle_triangle_properties {
             }IO.println();
         }
         IO.println("series of number with two Right angle traingle ");
+
+        //Same numbers in row
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i; j++) {
+               IO.print(i+" ");
+            }IO.println();
+        }IO.println("Same numbers in row");
+
+
     }   
     }

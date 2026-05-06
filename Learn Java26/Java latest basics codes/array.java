@@ -40,6 +40,17 @@ public class array {
         IO.println();
 
         //It print the list as array and print it into strings
-        IO.print("This is printed using Arrays.toString() :"+Arrays.toString(arrayplayer));
+        IO.println("This is printed using Arrays.toString() :"+Arrays.toString(arrayplayer)+"\n");
+
+        //*** NOW NUMERIC(int) in array ***
+        IO.println("Now Lets Talk about Integer in Array \n");
+        int[] numarray={1,5,3,7,2};
+
+        //to sort the numbers inside array
+        int[] sortednums=Arrays.stream(numarray).sorted().toArray();
+        IO.println("This is the Sorted Array: "+Arrays.toString(sortednums));//it needed to be print in String
+        //to square the numbers inside array
+        int[] square=Arrays.stream(numarray).map(x->x*x).toArray();
+        IO.println("This is the Square in Array: "+Arrays.toString(square));
     }
 }
