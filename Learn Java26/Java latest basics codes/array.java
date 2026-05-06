@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.SequencedCollection;
 
 public class array {
     void main() {
@@ -52,5 +54,14 @@ public class array {
         //to square the numbers inside array
         int[] square=Arrays.stream(numarray).map(x->x*x).toArray();
         IO.println("This is the Square in Array: "+Arrays.toString(square));
+
+        //Using Sequenced Collections (JDK 26) in array
+        SequencedCollection<Integer> sequencedofcollection= new ArrayList<>();
+        sequencedofcollection.addFirst(10);
+        sequencedofcollection.add(20);
+        sequencedofcollection.addLast(30);
+        IO.println("This is the Array list-> "+sequencedofcollection+"\nfirst element-> "+sequencedofcollection.getFirst()+"\nLast element-> "+sequencedofcollection.getLast());
+
+        //
     }
 }
