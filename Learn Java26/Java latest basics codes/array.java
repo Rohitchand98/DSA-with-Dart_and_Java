@@ -60,8 +60,14 @@ public class array {
         sequencedofcollection.addFirst(10);
         sequencedofcollection.add(20);
         sequencedofcollection.addLast(30);
-        IO.println("This is the Array list-> "+sequencedofcollection+"\nfirst element-> "+sequencedofcollection.getFirst()+"\nLast element-> "+sequencedofcollection.getLast());
+        IO.println("This is the Array list-> "+sequencedofcollection+"\nfirst element-> "+sequencedofcollection.getFirst()+"\nLast element-> "+sequencedofcollection.getLast()+"\n");
 
-        //
+        //Using Text Blocks for Input Parsing
+        String numbersinString="""
+                12,5,7,8
+                """;
+        int[] getnumbersinStrin=Arrays.stream(numbersinString.split(",")).map(String::trim).mapToInt(Integer::parseInt).toArray();
+        IO.println("This list is parsed from String list: "+Arrays.toString(getnumbersinStrin));
+
     }
 }
