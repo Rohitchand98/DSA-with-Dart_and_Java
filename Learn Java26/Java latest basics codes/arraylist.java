@@ -35,7 +35,7 @@ public class arraylist{
         lst3.add(0, "Orange");
         lst3.add(1, 2);
         for (Object obj : lst3) {
-          if (obj instanceof String s) {//Integer for ints
+          if(obj instanceof String s) {//Integer for ints
               IO.println(s);
           }else if (obj instanceof Integer i) {
               IO.println(i);
