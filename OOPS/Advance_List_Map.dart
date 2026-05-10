@@ -10,7 +10,7 @@ void main() {
   displayResults(calculationResults);
 }
 
-// TODO: Complete this function to display all calculation results
+// Complete this function to display all calculation results
 void displayResults(List<Map<String, dynamic>> results) {
   print('Calculation Results:');
   print('-------------------');
@@ -19,6 +19,5 @@ void displayResults(List<Map<String, dynamic>> results) {
     print("${calc["type"]}: ${calc["num1"]} and ${calc["num2"]} = ${calc["result"]}");
   }
 
-  // TODO: Loop through the results list and display each calculation
   // in the format: "[Type]: [num1] and [num2] = [result]"
 }

@@ -22,7 +22,7 @@ public int missingNumber(int[] nums) {
     
 }
 void main() {
-    int[] nums={0,1};
+    int[] nums={0,1,2};
     IO.println(missingNumber(nums));
 }
     
