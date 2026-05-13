@@ -1,4 +1,9 @@
 //void how many numbers are small than the current
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
 int[] smallerNumInArray(int[] nums){
 
     //This is the brute force method
@@ -16,21 +21,17 @@ int[] smallerNumInArray(int[] nums){
     
 
     //hashset Solution
-    int[] sortedNums = nums.clone();
-        Arrays.sort(sortedNums);
-        
-        Map<Integer, Integer> map = new HashMap<>();
-        for (int i = 0; i < sortedNums.length; i++) {
-            // putIfAbsent ensures we only record the index of the FIRST occurrence 
-            map.putIfAbsent(sortedNums[i], i);
-        }
-        
-        int[] result = new int[nums.length];
-        for (int i = 0; i < nums.length; i++) {
-            result[i] = map.get(nums[i]);
-        }
-        
-        return result;
+    int[] sortednum=nums.clone();
+    Arrays.sort(sortednum);
+    Map<Integer, Integer> map=new HashMap<>();
+    for (int i = 0; i < nums.length; i++) {
+        map.putIfAbsent(sortednum[i], i);
+    }
+    int[] result=new int[nums.length];
+    for (int i = 0; i < nums.length; i++) {
+        result[i]=map.get(nums[i]);
+    }
+    return result;
 }
 void main() {
     int[] nums = {8,1,2,2,3};
