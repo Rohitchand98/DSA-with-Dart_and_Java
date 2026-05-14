@@ -15,6 +15,15 @@ void main(){
     double solution=(total-sum)/(count-2);
     IO.print(solution);*/
     
-
+    //Now optimal Solution
+    int first=salary[0];
+    int last=salary[salary.length-1];
+    double sum=0;
+    for (int s=0; s<salary.length;s++) {
+        if(first!=salary[s] && last!=salary[s]){
+            sum+=salary[s];
+        }
+    }
+    IO.print(sum/(salary.length-2));
     
 }
