@@ -154,8 +154,8 @@
     Output:
 
     Code
-        * 
-        * * 
+    * 
+    * * 
     *   * 
     *     * 
     * * * * * 
@@ -178,7 +178,7 @@
     * * * * 
     * * * 
     * * 
-        * 
+    * 
     🔹 4. Mirror Pyramid (Right‑Aligned)
     java
     int n = 5;
@@ -194,10 +194,10 @@
     Output:
 
     Code
-            * 
-            * * 
-        * * * 
-        * * * * 
+    * 
+    * * 
+    * * * 
+    * * * * 
     * * * * * 
     🔹 5. Diamond (Pyramid + Inverse)
     java
@@ -225,15 +225,15 @@
     Output:
 
     Code
-        * 
-        * * 
+    * 
+    * * 
     * * * 
     * * * * 
     * * * * * 
     * * * * 
     * * * 
-        * * 
-        * 
+    * * 
+    * 
     🎯 Beginner Takeaway
     Spaces → push stars into position (center, right, etc.).
 

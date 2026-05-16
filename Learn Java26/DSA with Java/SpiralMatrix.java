@@ -5,9 +5,6 @@ void main(){
     int[][] nums = {{1,2,3},{4,5,6},{7,8,9}};
     
     List<Integer> result=new ArrayList<>();
-    if(nums==null||nums.length==0){
-        IO.print(result);
-    }
     int top=0;
     int bottom=nums.length-1;
     int left=0;
