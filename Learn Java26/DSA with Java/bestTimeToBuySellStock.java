@@ -1,8 +1,25 @@
 
 void main(){
-    int[] prices={7,1,5,3,6,4};
-    
+    //not working but Brute force
+    int[] prices={7,6,4,3,1};
+    int less=prices[0];
+    int indexofless=0;
+    int prof=0;
+    for (int i = 0; i < prices.length-1; i++) {
+        if(prices[i]<=less){
+            less=prices[i];
+            indexofless=i;//find index in array
+            if(prices[indexofless]<prices[indexofless+1]){
+                prof=prices[indexofless+1];
+                prices[indexofless]++;
+            }
+        }
+    }
 
+        
+    IO.print(less+" "+prof);
+
+    /*
     //This is Optimal Solution
     int left=0;
     int rig=1;
@@ -17,5 +34,5 @@ void main(){
         }
         rig++;
     }
-    IO.print(max);
+    IO.print(max);*/
 }
