@@ -63,10 +63,5 @@ public class arraylist {
             IO.println(p.id + " " + p.name+"\n");
         }
 
-        //Max min
-        List<Integer> nums = Arrays.asList(5, 2, 9, 1, 7);
-        System.out.println(Collections.min(nums)); // 1
-        System.out.println(Collections.max(nums)); // 9
-
     }
 }

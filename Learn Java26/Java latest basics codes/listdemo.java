@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class listdemo {
@@ -64,5 +65,18 @@ public class listdemo {
     String[]array2=list2.toArray(array); //list to array
     //list2.forEach(e-> IO.println(e+" list to array")); // for list
     Arrays.stream(array2).forEach(e-> IO.print(e+" ")); //or forEach(IO::print) it act as if true
+
+    //Max min
+    List<Integer> nums = Arrays.asList(5, 2, 9, 1, 7);
+    System.out.println(Collections.min(nums)); // 1
+    System.out.println(Collections.max(nums)); // 9
+
+    //multiple arraylist uses in Java
+    List<List<String>> biglist=new ArrayList<>();
+    biglist.add(lstname);
+    biglist.add(lstname1);
+    biglist.add(lstname2);
+    IO.print(biglist);
+
     }
 }
