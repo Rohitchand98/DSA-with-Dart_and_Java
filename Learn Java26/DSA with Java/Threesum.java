@@ -36,7 +36,4 @@ void main(){
         }
     }
     IO.print(result);
-    
-    
-
 }
