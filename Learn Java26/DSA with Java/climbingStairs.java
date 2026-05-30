@@ -4,7 +4,7 @@
             IO.print(1);
         }
 
-        
+        //Optimal Solution 
         int[] dp=new int[n+1];
         dp[0]=1;
         dp[1]=1;
